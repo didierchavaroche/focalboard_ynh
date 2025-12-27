@@ -12,5 +12,6 @@
     "session_expire_time": 2592000,
     "session_refresh_time": 18000,
     "enablePublicSharedBoards": __ENABLE_PUBLIC_BOARDS__,
-    "localOnly": false
+    "localOnly": false,
+	"basePath": "__PATH__"
 }
