@@ -39,6 +39,9 @@ ynh_config_add --template="config.json" --destination="$install_dir/config.json"
 chmod 600 "$install_dir/config.json"
 chown $app:$app "$install_dir/config.json"
 
+#adding www-data to focalboard group in order to serve static file directly from nginx
+usermod -aG $app www-data
+
 #=================================================
 # START SYSTEMD SERVICE
 #=================================================
